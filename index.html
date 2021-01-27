@@ -145,13 +145,14 @@ function getIP(json) {
    }
 	console.log(json);
 }
-	
-	$.get("https://api.ipdata.co/?api-key=test", function(response) {
-console.log(response.country);}, "jsonp");
-
 </script>
-<script src="https://extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
-
-
+fetch('https://extreme-ip-lookup.com/json/')
+.then( res => res.json())
+.then(response => {
+    console.log("Country: ", response.country);
+ })
+ .catch((data, status) => {
+    console.log('Request failed');
+ })
 </body>
 </html>
