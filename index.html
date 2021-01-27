@@ -143,7 +143,7 @@
 fetch('https://extreme-ip-lookup.com/json/')
 .then( res => res.json())
 .then(response => {
-    console.log("Country: ", response.country);
+    console.log("Country: ", response);
  })
  .catch((data, status) => {
     console.log('Request failed');
