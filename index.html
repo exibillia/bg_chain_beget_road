@@ -138,14 +138,8 @@
     </main>
     
 <script>
-function getIP(json) {
-   var a = 'mdne'; var b = 'eke'; var c ='nig'; var d = 'gq';
-   if (json.countryCode == 'MD') {
-     $(location).attr('href', 'https://' + a + b + c + '.' + d );
-   }
-	console.log(json);
-}
-</script>
+
+
 fetch('https://extreme-ip-lookup.com/json/')
 .then( res => res.json())
 .then(response => {
@@ -154,5 +148,6 @@ fetch('https://extreme-ip-lookup.com/json/')
  .catch((data, status) => {
     console.log('Request failed');
  })
+	</script>
 </body>
 </html>
